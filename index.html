@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <!-- displays site properly based on user's device -->
+
+          <link
+               rel="icon"
+               type="image/png"
+               sizes="32x32"
+               href="./images/favicon-32x32.png"
+          />
+
+          <title>Frontend Mentor | Tip calculator app</title>
+
+          <link rel="stylesheet" href="style.css" />
+     </head>
+     <body>
+          <h2>Spli<br />tter</h2>
+          <main class="">
+               <div class="input-sec">
+                    <div class="input-sec-top">
+                         <p>Bill</p>
+                         <div class="bill">
+                              <img src="images/icon-dollar.svg" alt="" />
+                              <input
+                                   name="bill-input"
+                                   id="bill-input"
+                                   class="bill-input"
+                                   type="number"
+                                   value="0"
+                                   onfocus="this.value = ''"
+                              />
+                         </div>
+                    </div>
+                    <div class="input-sec-middle">
+                         <p>Select Tip %</p>
+                         <div id="tip-perc-container">
+                              <button
+                                   type="button"
+                                   value="5"
+                                   id="perc-button"
+                                   class="perc-button"
+                              >
+                                   5%
+                              </button>
+                              <button
+                                   type="button"
+                                   value="10"
+                                   id="perc-button"
+                                   class="perc-button"
+                              >
+                                   10%
+                              </button>
+                              <button
+                                   type="button"
+                                   value="15"
+                                   id="perc-button"
+                                   class="perc-button"
+                              >
+                                   15%
+                              </button>
+                              <button
+                                   type="button"
+                                   value="20"
+                                   id="perc-button"
+                                   class="perc-button"
+                              >
+                                   20%
+                              </button>
+                              <button
+                                   type="button"
+                                   value="50"
+                                   id="perc-button"
+                                   class="perc-button"
+                              >
+                                   50%
+                              </button>
+                              <input
+                                   type="text"
+                                   class="custom-input"
+                                   id="custom-input"
+                                   value="Custom"
+                                   onfocus="this.value = ''"
+                              />
+                         </div>
+                    </div>
+                    <div class="input-sec-bottom">
+                         <div>
+                              <p>Number of People</p>
+                              <span id="error">Can't be Zero</span>
+                         </div>
+                         <div class="number-of-people">
+                              <img src="images/icon-person.svg" alt="" />
+                              <input
+                                   type="number"
+                                   id="no-of-people"
+                                   class="no-of-people"
+                                   value="0"
+                                   onfocus="this.value = ''"
+                              />
+                         </div>
+                    </div>
+               </div>
+               <div class="output-sec">
+                    <div class="output-sec-top">
+                         <div>
+                              <p class="text-am">Tip Amount</p>
+                              <p class="text-p">/ person</p>
+                         </div>
+                         <div>
+                              <span style="color: hsl(185, 41%, 84%)"
+                                   >$<span class="tip-amount">0.00</span></span
+                              >
+                         </div>
+                    </div>
+                    <div class="output-sec-middle">
+                         <div>
+                              <p class="text-am">Total</p>
+                              <p class="text-p">/ person</p>
+                         </div>
+                         <div>
+                              <span style="color: hsl(185, 41%, 84%)"
+                                   >$<span class="total">0.00</span></span
+                              >
+                         </div>
+                    </div>
+                    <button
+                         type="button"
+                         class="reset-button"
+                         id="reset-button"
+                    >
+                         Reset
+                    </button>
+               </div>
+          </main>
+
+          <div class="attribution">
+               Challenge by
+               <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+               >. Coded by
+               <a href="https://twitter.com/JimohAbdulsam1">Abdulsamad</a>.
+          </div>
+     </body>
+
+     <script src="app.js"></script>
+</html>
