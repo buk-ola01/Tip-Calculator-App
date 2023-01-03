@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+     font-family: "Space Mono", monospace;
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+:root {
+     --veryDarkCyan: hsl(183, 100%, 15%);
+     --darkGrayishCyan: hsl(186, 14%, 43%);
+     --grayishCyan: hsl(184, 14%, 56%);
+     --lightGrayishCyan: hsl(185, 41%, 84%);
+     --veryLightGrayishCyan: hsl(189, 41%, 97%);
+     --white: hsl(0, 0%, 100%);
+}
+body {
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 3em;
+     background-color: var(--lightGrayishCyan);
+}
+main {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: auto;
+     gap: 2em;
+     border-radius: 20px;
+     background-color: var(--white);
+     padding: 30px;
+     width: 80%;
+}
+h2 {
+     text-transform: uppercase;
+     letter-spacing: 5px;
+     color: var(--veryDarkCyan);
+     line-height: 32px;
+     margin-top: 15px;
+}
+.input-sec {
+     display: flex;
+     flex-direction: column;
+     gap: 1.6em;
+}
+.input-sec-top > p {
+     color: var(--grayishCyan);
+}
+
+.input-sec-top .bill,
+.number-of-people {
+     display: flex;
+     position: relative;
+}
+.bill input,
+.number-of-people input {
+     color: var(--veryDarkCyan);
+     background-color: var(--veryLightGrayishCyan);
+     font-size: 20px;
+     font-weight: bold;
+     text-align: end;
+     padding: 0.45em;
+     width: 100%;
+     border-radius: 5px;
+     outline: none;
+     border: none;
+     margin: 10px 0;
+}
+.bill input:focus,
+.number-of-people input:focus {
+     border: 1.5px solid var(--darkGrayishCyan);
+}
+.bill img,
+.number-of-people img {
+     aspect-ratio: 1/1;
+     position: absolute;
+     max-width: 20px;
+     top: 1.2em;
+     left: 13px;
+}
+#tip-perc-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     gap: 10px;
+     margin: 10px 0;
+}
+#perc-button {
+     padding: 10px 5px;
+     background-color: var(--veryDarkCyan);
+     color: var(--white);
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+}
+#perc-button:hover {
+     background-color: var(--lightGrayishCyan);
+     color: var(--veryDarkCyan);
+}
+.custom-input {
+     color: var(--darkGrayishCyan);
+     background-color: var(--veryLightGrayishCyan);
+     border: none;
+     text-align: center;
+     font-weight: bold;
+     outline: none;
+     width: 100%;
+     border-radius: 7px;
+}
+.input-sec-bottom div:first-of-type {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 1em;
+}
+.output-sec {
+     background-color: var(--veryDarkCyan);
+     padding: 35px;
+     border-radius: 15px;
+     display: flex;
+     flex-direction: column;
+     gap: 3em;
+}
+.output-sec > div {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.text-am {
+     color: var(--white);
+}
+.text-p {
+     color: var(--grayishCyan);
+     font-size: 15px;
+}
+.tip-amount,
+.total {
+     font-size: 35px;
+     color: var(--lightGrayishCyan);
+}
+.reset-button {
+     width: 100%;
+     background-color: var(--darkGrayishCyan);
+     color: var(--veryDarkCyan);
+     border: none;
+     border-radius: 10px;
+     padding: 10px;
+     text-align: center;
+     text-transform: uppercase;
+     align-self: flex-end;
+     margin-top: 80px;
+     cursor: pointer;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+     appearance: none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+}
+
+#error {
+     color: red;
+     float: right;
+     font-size: 14px;
+     display: none;
+}
+.invalid {
+     border-color: red;
+}
+.active,
+.perc-button.active {
+     background-color: var(--lightGrayishCyan);
+     color: var(--veryDarkCyan);
+}
+.attribution {
+     font-size: 11px;
+     text-align: center;
+     margin-bottom: 15px;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 750px) {
+     main {
+          grid-template-columns: 100%;
+          width: 100%;
+     }
+     main {
+          padding: 25px;
+     }
+     #tip-perc-container {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+     }
+     .output-sec {
+          padding: 20px;
+     }
+     .tip-amount,
+     .total {
+          font-size: 25px;
+          color: var(--lightGrayishCyan);
+     }
+}
+@media screen and (max-width: 910px) {
+     main {
+          width: 100%;
+     }
+}
