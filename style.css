@@ -86,7 +86,7 @@ h2 {
      gap: 10px;
      margin: 10px 0;
 }
-#perc-button {
+.perc-button {
      padding: 10px 5px;
      background-color: var(--veryDarkCyan);
      color: var(--white);
@@ -94,7 +94,7 @@ h2 {
      border-radius: 5px;
      cursor: pointer;
 }
-#perc-button:hover {
+.perc-button:hover {
      background-color: var(--lightGrayishCyan);
      color: var(--veryDarkCyan);
 }
