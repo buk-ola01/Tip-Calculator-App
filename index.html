@@ -20,7 +20,7 @@
           <link rel="stylesheet" href="style.css" />
      </head>
      <body>
-          <h2>Spli<br />tter</h2>
+          <h2 role="heading">Spli<br />tter</h2>
           <main class="">
                <div class="input-sec">
                     <div class="input-sec-top">
@@ -34,6 +34,7 @@
                                    type="number"
                                    value="0"
                                    onfocus="this.value = ''"
+                                   aria-label="Bill-amount"
                               />
                          </div>
                     </div>
@@ -86,6 +87,7 @@
                                    id="custom-input"
                                    value="Custom"
                                    onfocus="this.value = ''"
+                                   aria-label="custom-percentage"
                               />
                          </div>
                     </div>
@@ -102,6 +104,7 @@
                                    class="no-of-people"
                                    value="0"
                                    onfocus="this.value = ''"
+                                   aria-label="number-of-people"
                               />
                          </div>
                     </div>
@@ -139,7 +142,7 @@
                </div>
           </main>
 
-          <div class="attribution">
+          <div class="attribution" role="doc-footnote">
                Challenge by
                <a
                     href="https://www.frontendmentor.io?ref=challenge"
