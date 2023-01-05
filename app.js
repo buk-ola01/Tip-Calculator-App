@@ -1,6 +1,6 @@
 const billInput = document.querySelector("#bill-input");
 const customInput = document.querySelector("#custom-input");
-const percButtons = document.querySelectorAll("#perc-button");
+const percButtons = document.querySelectorAll(".perc-button");
 const noOfPeople = document.getElementById("no-of-people");
 const tipAmount = document.querySelector(".tip-amount");
 const resetBtn = document.getElementById("reset-button");
@@ -110,3 +110,9 @@ resetBtn.addEventListener("click", resetAll);
 //           console.log("added");
 //      });
 // }
+
+percButtons.forEach((item) => {
+     item.addEventListener("click", function () {
+          item.classList.add("active");
+     });
+});
