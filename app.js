@@ -102,17 +102,12 @@ function resetAll() {
 //event listener to handle the reset function to the reset button
 resetBtn.addEventListener("click", resetAll);
 
-// for (let i = 0; i < percButtons.length; i++) {
-//      const element = percButtons[i];
-//      element.addEventListener("click", function () {
-//           console.log(`${percButtons[i].value} percent was clicked`);
-//           element.classList.add("active");
-//           console.log("added");
-//      });
-// }
+percButtons.forEach((element) => {
+     element.addEventListener("click", function (e) {
+          document.querySelectorAll(".active").forEach((item) => {
+               item.classList.remove("active");
+          });
 
-percButtons.forEach((item) => {
-     item.addEventListener("click", function () {
-          item.classList.add("active");
+          e.target.classList.add("active");
      });
 });
