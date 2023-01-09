@@ -5,15 +5,15 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 ## Table of contents
 
 -    [Overview](#overview)
-     -    [The challenge](Tip-Calculator-App)
-     -    [Screenshot](images/screenshot.png)
-     -    [Links](#)
-     -    [Built with](HTML-CSS-JS)
+     -    [The challenge](#the-challenge)
+     -    [Screenshot](#screenshot)
+     -    [Links](#links)
+     -    [Built with](#built-with)
      -    [What I learned](#what-i-learned)
      -    [Continued development](#continued-development)
      -    [Useful resources](#useful-resources)
 -    [Author](#author)
--    [Acknowledgments](#acknowledgments)
+
 
 ## Overview
 
