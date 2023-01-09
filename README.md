@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
--    Solution URL: [https://github.com/buk-ola01/Tip-Calculator-App]
--    Live Site URL: [https://buk-ola01.github.io/Tip-Calculator-App]
+-    Solution URL: [Tip Calculator App](https://github.com/buk-ola01/Tip-Calculator-App)
+-    Live Site URL:[Tip Calculator App] (https://buk-ola01.github.io/Tip-Calculator-App)
 
 ## My process
 
