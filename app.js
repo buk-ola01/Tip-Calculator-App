@@ -64,6 +64,9 @@ function customInputState() {
      customInput.onfocus = function () {
           this.style.border = "1.5px solid var(--darkGrayishCyan)";
           this.value = "";
+          percButtons.forEach((item) => {
+               item.classList.remove("active");
+          });
      };
 
      customInput.onblur = function () {
