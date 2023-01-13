@@ -105,8 +105,8 @@ function resetAll() {
 //event listener to handle the reset function to the reset button
 resetBtn.addEventListener("click", resetAll);
 
-percButtons.forEach((element) => {
-     element.addEventListener("click", function (e) {
+percButtons.forEach((item) => {
+     item.addEventListener("click", function (e) {
           document.querySelectorAll(".active").forEach((item) => {
                item.classList.remove("active");
           });
